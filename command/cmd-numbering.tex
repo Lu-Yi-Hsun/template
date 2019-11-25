@@ -925,11 +925,12 @@
   %
   %\SetupGeneralFigureNumberFormatString%
   \SetupGeneralTableNumberFormatString%
-  \SetupGeneralEquationNumberFormatString%
+  %\SetupGeneralEquationNumberFormatString%
   %\renewcommand{\thefigure}{\GetGeneralFigureNumberFormatString}%
   \renewcommand{\thefigure}{\arabic{figure}}
-  \renewcommand{\thetable}{\GetGeneralTableNumberFormatString}%
-  \renewcommand{\theequation}{\GetGeneralEquationNumberFormatString}%
+  \renewcommand{\thetable}{\GetGeneralTableNumberFormatString}% 
+  \renewcommand{\theequation}{\arabic{equation}}
+  %\renewcommand{\theequation}{\GetGeneralEquationNumberFormatString}%
 } % End of \newcommand{}
 
 % Setup all custom numbering format use in Appendix
